@@ -1,0 +1,13 @@
+while True:
+  num = int(input("Enter a number: "))
+  rev = int(str(num)[::-1])
+
+  if num == rev:
+      print("It is Palindrome number.")
+  else:
+      print("It is Not a palindrome number.")
+
+  choice = input("Do you want to check another number? (yes/no): ").lower()
+  if choice != 'yes':
+      print("Program ended.")
+      break
